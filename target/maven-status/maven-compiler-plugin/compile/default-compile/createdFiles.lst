@@ -1,0 +1,12 @@
+by\fpmibsu\slastymordasty\entity\Entity.class
+Main.class
+by\fpmibsu\slastymordasty\entity\Dessert.class
+by\fpmibsu\slastymordasty\dao\UserDao.class
+by\fpmibsu\slastymordasty\entity\Cake.class
+by\fpmibsu\slastymordasty\entity\Order.class
+by\fpmibsu\slastymordasty\entity\Item.class
+by\fpmibsu\slastymordasty\entity\Component.class
+by\fpmibsu\slastymordasty\dao\MySQLStatement.class
+by\fpmibsu\slastymordasty\entity\NutritionalValue.class
+by\fpmibsu\slastymordasty\entity\User.class
+by\fpmibsu\slastymordasty\entity\Role.class

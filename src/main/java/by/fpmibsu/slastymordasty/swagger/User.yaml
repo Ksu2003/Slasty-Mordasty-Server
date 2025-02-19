@@ -1,0 +1,216 @@
+openapi: 3.0.3
+info:
+  title: USER
+  version: 1.0.0
+  description: The user class is a one of the most important class, that has been created to work with user. It is contain id, email, password, phoneNumber, address, role.
+servers:
+  - url: http://localhost:9090/Slasty-Mordasty/api
+    description: Server
+paths:
+  /getId:
+    get:
+      summary: Id get method
+      tags:
+        - getters
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: successful receipt of id
+          content:
+            application/json:
+              schema:
+                type: integer
+                example: 0
+  /getEmail:
+    get:
+      summary: Email get method
+      tags:
+        - getters
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: successful receipt of email
+          content:
+            application/json:
+              schema:
+                type: object
+                example: panchuk.dmitriy.04@mail.ru
+  /getPassword:
+    get:
+      summary: Password get method
+      tags:
+        - getters
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: successful receipt of password
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "12345678"
+  /getAddressStreet:
+    get:
+      summary: AddressStreet get method
+      tags:
+        - getters
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: successful receipt of AddressStreet
+          content:
+            application/json:
+              schema:
+                type: string
+                example: Октябрьская
+  /getNumHouseFlat:
+    get:
+      summary: NumHouseFlat get method
+      tags:
+        - getters
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: successful receipt of NumHouseFlat
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "10 703"
+  /getPhoneNumber:
+    get:
+      summary: PhoneNumber get method
+      tags:
+        -   getters
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: successful receipt of PhoneNumber
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "+375445591987"
+
+  /setId:
+    post:
+      summary: Id set method
+      tags:
+        - setters
+      requestBody:
+        required: true
+        description: id to set, watch example
+        content:
+          application/json:
+            schema:
+              type: integer
+              example: {id: 2}
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: empty
+
+  /setEmail:
+    post:
+      summary: Email set method
+      tags:
+        - setters
+      requestBody:
+        required: true
+        description: Email to set, watch example
+        content:
+          application/json:
+            schema:
+              type: string
+              example: { email: "panchuk.dmitriy.04@mail.ru" }
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: empty
+
+  /setPassword:
+    post:
+      summary: Password set method
+      tags:
+        - setters
+      requestBody:
+        required: true
+        description: Password to set, watch example
+        content:
+          application/json:
+            schema:
+              type: string
+              example: { password: "12345678" }
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: empty
+
+
+  /setPhoneNumber:
+    post:
+      summary: PhoneNumber set method
+      tags:
+        - setters
+      requestBody:
+        required: true
+        description: PhoneNumber to set, watch example
+        content:
+          application/json:
+            schema:
+              type: string
+              example: { password: "+375445591987" }
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: empty
+
+
+  /setAdressStreet:
+    post:
+      summary: AdressStreet set method
+      tags:
+        - setters
+      requestBody:
+        required: true
+        description: AdressStreet to set, watch example
+        content:
+          application/json:
+            schema:
+              type: string
+              example: { password: Октябрьская }
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: empty
+
+
+  /setNumHouseFlat:
+    post:
+      summary: NumHouseFlat set method
+      tags:
+        - setters
+      requestBody:
+        required: true
+        description: NumHouseFlat to set, watch example
+        content:
+          application/json:
+            schema:
+              type: string
+              example: { password: 10 703 }
+      responses:
+        "999":
+          description: error on client side
+        "200":
+          description: empty
